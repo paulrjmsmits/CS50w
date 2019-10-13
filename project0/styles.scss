@@ -1,0 +1,54 @@
+$bk_color: silver;
+$opacity: 0.9;
+$padding: 20px;
+$margin: 30px;
+$p_color: navy;
+$h_color: blue;
+
+.bg {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+  color: $h_color;
+}
+p {
+  color: $p_color;
+}
+%textblock {
+    padding: $padding;
+    background-color: $bk_color;
+    opacity: $opacity;
+}
+#maintextblock {
+    @extend %textblock;
+    margin-top: 100px;
+    margin-bottom: $margin;
+    margin-right: $margin;
+    margin-left: $margin;
+    h5 {
+        color: $h_color;
+    }
+}
+#inputblock {
+    @extend %textblock;
+    font-style: italic;
+}
+.logo {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: grey;
+}
+.card-text {
+    color: $p_color;
+}
+.footer {
+    font-style: italic;
+    font-size: small;
+    padding: 5px;
+    background-color: white;
+    opacity: 0.8;
+    float: right;
+    width: 160px;
+    margin-top: 80px;
+}
